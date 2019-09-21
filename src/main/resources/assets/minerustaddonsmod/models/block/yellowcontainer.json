@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/yellowcontainer",
+    "up": "minerustaddonsmod:blocks/yellowcontainer",
+    "north": "minerustaddonsmod:blocks/yellowcontainer",
+    "east": "minerustaddonsmod:blocks/yellowcontainer",
+    "south": "minerustaddonsmod:blocks/yellowcontainer",
+    "west": "minerustaddonsmod:blocks/yellowcontainer",
+    "particle": "minerustaddonsmod:blocks/yellowcontainer"
+  }
+}

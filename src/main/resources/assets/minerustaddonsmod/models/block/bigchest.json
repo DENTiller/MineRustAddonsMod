@@ -1,0 +1,11 @@
+{
+  "parent": "minerustaddonsmod:custom/bigchest",
+  "textures": {
+    "all": "minerustaddonsmod:blocks/bigchesttop",
+    "particle": "minerustaddonsmod:blocks/bigchesttop",
+    "0": "minerustaddonsmod:blocks/bigchesttop",
+    "1": "minerustaddonsmod:blocks/bigchestleft",
+    "2": "minerustaddonsmod:blocks/bigchestosnova",
+    "3": "minerustaddonsmod:blocks/bigchestosnova"
+  }
+}

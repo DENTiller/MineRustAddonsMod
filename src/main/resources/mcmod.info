@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "minerustaddonsmod",
+    "name": "MineRustAddonsMod",
+    "description": "Blocks,Tools,Resources,Armors,Clothes,Medicals,Foods from game Rust.",
+    "version": "2.0",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "logoFile": "assets/minerustaddonsmod/textures/logo.png",
+    "mcversion": "1.12.2",
+    "url": "https://mcreator.net",
+    "updateUrl": "",
+    "authorList": [
+      "DENTiller_YT",
+      "MCreator"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "requiredMods": []
+  }
+]

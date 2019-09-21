@@ -1,0 +1,11 @@
+{
+  "_fv": 3,
+  "_type": "tab",
+  "definition": {
+    "name": "MineRust Addon Tools",
+    "icon": {
+      "value": "CUSTOM:Metalpickaxe"
+    },
+    "showSearch": false
+  }
+}

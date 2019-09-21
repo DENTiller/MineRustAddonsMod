@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/gravelsnow",
+    "up": "minerustaddonsmod:blocks/gravelsnow",
+    "north": "minerustaddonsmod:blocks/gravelsnow",
+    "east": "minerustaddonsmod:blocks/gravelsnow",
+    "south": "minerustaddonsmod:blocks/gravelsnow",
+    "west": "minerustaddonsmod:blocks/gravelsnow",
+    "particle": "minerustaddonsmod:blocks/gravelsnow"
+  }
+}

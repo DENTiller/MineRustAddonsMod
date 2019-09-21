@@ -1,0 +1,20 @@
+{
+  "_fv": 3,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ironpickaxe",
+    "customModelName": "Normal",
+    "name": "§fIron Pickaxe",
+    "creativeTab": {
+      "value": "CUSTOM:ToolsTab"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 1.0,
+    "enchantability": 0,
+    "damageVsEntity": 1.0,
+    "usageCount": 100,
+    "blocksAffected": []
+  }
+}

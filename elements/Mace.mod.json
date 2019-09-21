@@ -1,0 +1,20 @@
+{
+  "_fv": 3,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "mace",
+    "customModelName": "Normal",
+    "name": "§fMace",
+    "creativeTab": {
+      "value": "CUSTOM:ToolsTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 2,
+    "efficiency": 0.0,
+    "enchantability": 0,
+    "damageVsEntity": 2.0,
+    "usageCount": 100,
+    "blocksAffected": []
+  }
+}

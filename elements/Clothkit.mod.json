@@ -1,0 +1,43 @@
+{
+  "_fv": 3,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "clothshawl",
+    "enableBody": true,
+    "textureBody": "clothjacket",
+    "enableLeggings": true,
+    "textureLeggings": "clothshorts",
+    "enableBoots": true,
+    "textureBoots": "clothsocks",
+    "creativeTab": {
+      "value": "CUSTOM:ArmorsandClothesTAB"
+    },
+    "armorTextureFile": "cloth_1_",
+    "helmetName": "§fCloth Shawl",
+    "bodyName": "§fCloth Jacket",
+    "leggingsName": "§fCloth Shorts",
+    "bootsName": "§fCloth Socks",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 4,
+    "damageValueHelmet": 1,
+    "damageValueBody": 1,
+    "damageValueLeggings": 1,
+    "damageValueBoots": 1,
+    "enchantability": 0,
+    "toughness": 0.0
+  }
+}

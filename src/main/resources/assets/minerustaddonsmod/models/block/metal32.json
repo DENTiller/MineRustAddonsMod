@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/metal32",
+    "up": "minerustaddonsmod:blocks/metal32",
+    "north": "minerustaddonsmod:blocks/metal32",
+    "east": "minerustaddonsmod:blocks/metal32",
+    "south": "minerustaddonsmod:blocks/metal32",
+    "west": "minerustaddonsmod:blocks/metal32",
+    "particle": "minerustaddonsmod:blocks/metal32"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/roadblockline",
+    "up": "minerustaddonsmod:blocks/roadblockline",
+    "north": "minerustaddonsmod:blocks/roadblockline",
+    "east": "minerustaddonsmod:blocks/roadblockline",
+    "south": "minerustaddonsmod:blocks/roadblockline",
+    "west": "minerustaddonsmod:blocks/roadblockline",
+    "particle": "minerustaddonsmod:blocks/roadblockline"
+  }
+}

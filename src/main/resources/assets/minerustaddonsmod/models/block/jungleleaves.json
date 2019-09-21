@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/jungleleaves",
+    "up": "minerustaddonsmod:blocks/jungleleaves",
+    "north": "minerustaddonsmod:blocks/jungleleaves",
+    "east": "minerustaddonsmod:blocks/jungleleaves",
+    "south": "minerustaddonsmod:blocks/jungleleaves",
+    "west": "minerustaddonsmod:blocks/jungleleaves",
+    "particle": "minerustaddonsmod:blocks/jungleleaves"
+  }
+}

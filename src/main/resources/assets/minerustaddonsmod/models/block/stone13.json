@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/stone13",
+    "up": "minerustaddonsmod:blocks/stone13",
+    "north": "minerustaddonsmod:blocks/stone13",
+    "east": "minerustaddonsmod:blocks/stone13",
+    "south": "minerustaddonsmod:blocks/stone13",
+    "west": "minerustaddonsmod:blocks/stone13",
+    "particle": "minerustaddonsmod:blocks/stone13"
+  }
+}

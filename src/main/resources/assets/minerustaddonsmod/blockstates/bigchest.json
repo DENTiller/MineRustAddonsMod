@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:bigchest"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:bigchest"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:bigchest",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:bigchest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:bigchest",
+      "y": 270
+    }
+  }
+}

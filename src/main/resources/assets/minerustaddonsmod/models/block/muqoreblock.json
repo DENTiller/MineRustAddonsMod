@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/muqoreblock",
+    "up": "minerustaddonsmod:blocks/muqoreblock",
+    "north": "minerustaddonsmod:blocks/muqoreblock",
+    "east": "minerustaddonsmod:blocks/muqoreblock",
+    "south": "minerustaddonsmod:blocks/muqoreblock",
+    "west": "minerustaddonsmod:blocks/muqoreblock",
+    "particle": "minerustaddonsmod:blocks/muqoreblock"
+  }
+}

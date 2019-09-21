@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/junglewood",
+    "up": "minerustaddonsmod:blocks/junglewood",
+    "north": "minerustaddonsmod:blocks/junglewood",
+    "east": "minerustaddonsmod:blocks/junglewood",
+    "south": "minerustaddonsmod:blocks/junglewood",
+    "west": "minerustaddonsmod:blocks/junglewood",
+    "particle": "minerustaddonsmod:blocks/junglewood"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:stonewall"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:stonewall"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:stonewall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:stonewall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:stonewall",
+      "y": 270
+    }
+  }
+}

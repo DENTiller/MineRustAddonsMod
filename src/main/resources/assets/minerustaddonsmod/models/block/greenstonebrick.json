@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/greenstonebrick",
+    "up": "minerustaddonsmod:blocks/greenstonebrick",
+    "north": "minerustaddonsmod:blocks/greenstonebrick",
+    "east": "minerustaddonsmod:blocks/greenstonebrick",
+    "south": "minerustaddonsmod:blocks/greenstonebrick",
+    "west": "minerustaddonsmod:blocks/greenstonebrick",
+    "particle": "minerustaddonsmod:blocks/greenstonebrick"
+  }
+}

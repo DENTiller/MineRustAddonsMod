@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/haydetails2",
+    "up": "minerustaddonsmod:blocks/haydetails2",
+    "north": "minerustaddonsmod:blocks/haydetails2",
+    "east": "minerustaddonsmod:blocks/haydetails2",
+    "south": "minerustaddonsmod:blocks/haydetails2",
+    "west": "minerustaddonsmod:blocks/haydetails2",
+    "particle": "minerustaddonsmod:blocks/haydetails2"
+  }
+}

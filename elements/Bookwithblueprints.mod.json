@@ -1,0 +1,26 @@
+{
+  "_fv": 3,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "bookwithblueprints",
+    "customModelName": "Normal",
+    "name": "§dBook with Blueprints",
+    "creativeTab": {
+      "value": "CUSTOM:OtherTab"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "canBeDroppedAsGrassSeed": false,
+    "droppedAsGrassSeedProbability": 5,
+    "specialInfo": [
+      "Assembly blueprints"
+    ],
+    "hasGlow": false
+  }
+}

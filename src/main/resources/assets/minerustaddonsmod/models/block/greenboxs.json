@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/greenboxs",
+    "up": "minerustaddonsmod:blocks/greenboxsup",
+    "north": "minerustaddonsmod:blocks/greenboxs",
+    "east": "minerustaddonsmod:blocks/greenboxs",
+    "south": "minerustaddonsmod:blocks/greenboxs",
+    "west": "minerustaddonsmod:blocks/greenboxs",
+    "particle": "minerustaddonsmod:blocks/greenboxs"
+  }
+}

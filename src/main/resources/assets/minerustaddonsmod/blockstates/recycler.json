@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:recycler"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:recycler"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:recycler",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:recycler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:recycler",
+      "y": 270
+    }
+  }
+}

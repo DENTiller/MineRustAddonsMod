@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:armoredwall"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:armoredwall"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:armoredwall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:armoredwall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:armoredwall",
+      "y": 270
+    }
+  }
+}

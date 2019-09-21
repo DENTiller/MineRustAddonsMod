@@ -1,0 +1,91 @@
+{
+  "_fv": 3,
+  "_type": "block",
+  "definition": {
+    "texture": "haywall",
+    "textureTop": "hayfloor",
+    "textureLeft": "haywall",
+    "textureFront": "haywall",
+    "textureRight": "haywall",
+    "textureBack": "haywall",
+    "renderType": 2,
+    "customModelName": "hayfloor:default",
+    "rotationMode": 0,
+    "hasTransparency": true,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "name": "§fHay Foundation",
+    "specialInfo": [
+      "§fLevel Protection : §7[0] §7",
+      "- It breaks easily"
+    ],
+    "hardness": 20.0,
+    "resistance": 10.0,
+    "hasGravity": true,
+    "creativeTab": {
+      "value": "CUSTOM:BuildingBlock"
+    },
+    "destroyTool": "axe",
+    "affectedBySilkTouch": true,
+    "hasCustomDrop": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "WOOD"
+    },
+    "tickRate": 10,
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "WOOD"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 3,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5000000014901161,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "onRightClicked": {
+      "name": "Hayfloorupinwood"
+    },
+    "onDestroyedByPlayer": {
+      "name": "BrokeWood"
+    },
+    "onDestroyedByExplosion": {
+      "name": "WoodBrokenExp"
+    },
+    "onBlockPlayedBy": {
+      "name": "BuildWood"
+    },
+    "spawnWorldTypes": [],
+    "restricPerBiome": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 1,
+    "minGenerateHeight": 10,
+    "maxGenerateHeight": 11
+  }
+}

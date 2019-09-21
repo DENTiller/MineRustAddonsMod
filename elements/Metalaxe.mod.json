@@ -1,0 +1,20 @@
+{
+  "_fv": 3,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "metalaxe",
+    "customModelName": "Normal",
+    "name": "§fMetal Axe",
+    "creativeTab": {
+      "value": "CUSTOM:ToolsTab"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 3,
+    "efficiency": 0.0,
+    "enchantability": 0,
+    "damageVsEntity": 0.5,
+    "usageCount": 100,
+    "blocksAffected": []
+  }
+}

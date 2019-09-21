@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/metalramp",
+    "up": "minerustaddonsmod:blocks/metalramp",
+    "north": "minerustaddonsmod:blocks/metalramp",
+    "east": "minerustaddonsmod:blocks/metalramp",
+    "south": "minerustaddonsmod:blocks/metalramp",
+    "west": "minerustaddonsmod:blocks/metalramp",
+    "particle": "minerustaddonsmod:blocks/metalramp"
+  }
+}

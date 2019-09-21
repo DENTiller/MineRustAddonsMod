@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/sand2terrain",
+    "up": "minerustaddonsmod:blocks/sand2terrain",
+    "north": "minerustaddonsmod:blocks/sand2terrain",
+    "east": "minerustaddonsmod:blocks/sand2terrain",
+    "south": "minerustaddonsmod:blocks/sand2terrain",
+    "west": "minerustaddonsmod:blocks/sand2terrain",
+    "particle": "minerustaddonsmod:blocks/sand2terrain"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minerustaddonsmod:custom/smallstash",
+  "textures": {
+    "all": "minerustaddonsmod:blocks/smallstash",
+    "particle": "minerustaddonsmod:blocks/smallstash",
+    "0": "minerustaddonsmod:blocks/smallstash"
+  }
+}

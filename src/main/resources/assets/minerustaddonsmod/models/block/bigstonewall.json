@@ -1,0 +1,11 @@
+{
+  "parent": "minerustaddonsmod:custom/bigstonewall",
+  "textures": {
+    "all": "minerustaddonsmod:blocks/bigwallblock",
+    "particle": "minerustaddonsmod:blocks/bigwallblock",
+    "0": "minerustaddonsmod:blocks/bigwallblock",
+    "1": "minerustaddonsmod:blocks/metalwallbig",
+    "2": "minerustaddonsmod:blocks/barbedwire",
+    "missing": "minerustaddonsmod:blocks/bigwallblock"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 3,
+  "_type": "tab",
+  "definition": {
+    "name": "MineRust Addon Medicals",
+    "icon": {
+      "value": "CUSTOM:Syringe"
+    },
+    "showSearch": false
+  }
+}

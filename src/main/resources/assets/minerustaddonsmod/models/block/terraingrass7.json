@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/grass71",
+    "up": "minerustaddonsmod:blocks/grass71",
+    "north": "minerustaddonsmod:blocks/grass71",
+    "east": "minerustaddonsmod:blocks/grass71",
+    "south": "minerustaddonsmod:blocks/grass71",
+    "west": "minerustaddonsmod:blocks/grass71",
+    "particle": "minerustaddonsmod:blocks/grass71"
+  }
+}

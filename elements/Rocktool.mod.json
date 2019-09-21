@@ -1,0 +1,20 @@
+{
+  "_fv": 3,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "vanillastone",
+    "customModelName": "rocktool:default",
+    "name": "§fRock Tool",
+    "creativeTab": {
+      "value": "CUSTOM:ToolsTab"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 0.5,
+    "enchantability": 0,
+    "damageVsEntity": 0.5,
+    "usageCount": 100,
+    "blocksAffected": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "minerustaddonsmod:blocks/hemp",
+    "particle": "minerustaddonsmod:blocks/hemp"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:woodwall"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:woodwall"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:woodwall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:woodwall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:woodwall",
+      "y": 270
+    }
+  }
+}

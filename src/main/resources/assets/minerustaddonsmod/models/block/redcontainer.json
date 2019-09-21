@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/redcontainer",
+    "up": "minerustaddonsmod:blocks/redcontainer",
+    "north": "minerustaddonsmod:blocks/redcontainer",
+    "east": "minerustaddonsmod:blocks/redcontainer",
+    "south": "minerustaddonsmod:blocks/redcontainer",
+    "west": "minerustaddonsmod:blocks/redcontainer",
+    "particle": "minerustaddonsmod:blocks/redcontainer"
+  }
+}

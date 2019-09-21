@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/plitka",
+    "up": "minerustaddonsmod:blocks/plitka",
+    "north": "minerustaddonsmod:blocks/plitka",
+    "east": "minerustaddonsmod:blocks/plitka",
+    "south": "minerustaddonsmod:blocks/plitka",
+    "west": "minerustaddonsmod:blocks/plitka",
+    "particle": "minerustaddonsmod:blocks/plitka"
+  }
+}

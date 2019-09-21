@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/cactusup",
+    "up": "minerustaddonsmod:blocks/cactusup",
+    "north": "minerustaddonsmod:blocks/cactustop",
+    "east": "minerustaddonsmod:blocks/cactustop",
+    "south": "minerustaddonsmod:blocks/cactustop",
+    "west": "minerustaddonsmod:blocks/cactustop",
+    "particle": "minerustaddonsmod:blocks/cactusup"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:smallstash"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:smallstash"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:smallstash",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:smallstash",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:smallstash",
+      "y": 270
+    }
+  }
+}

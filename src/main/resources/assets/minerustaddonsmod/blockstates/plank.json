@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:plank"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:plank"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:plank",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:plank",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:plank",
+      "y": 270
+    }
+  }
+}

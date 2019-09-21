@@ -1,0 +1,6 @@
+{
+  "parent": "minerustaddonsmod:custom/rocktool",
+  "textures": {
+    "0": "minerustaddonsmod:blocks/vanillastone"
+  }
+}

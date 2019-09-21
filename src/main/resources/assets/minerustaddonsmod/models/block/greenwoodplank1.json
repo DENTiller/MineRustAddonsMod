@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/plankgreen",
+    "up": "minerustaddonsmod:blocks/plankgreen",
+    "north": "minerustaddonsmod:blocks/plankgreen",
+    "east": "minerustaddonsmod:blocks/plankgreen",
+    "south": "minerustaddonsmod:blocks/plankgreen",
+    "west": "minerustaddonsmod:blocks/plankgreen",
+    "particle": "minerustaddonsmod:blocks/plankgreen"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_fv": 3,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "woodenhelmet",
+    "enableBody": true,
+    "textureBody": "woodenchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "woodenleggings",
+    "enableBoots": true,
+    "textureBoots": "rubberboots",
+    "creativeTab": {
+      "value": "CUSTOM:ArmorsandClothesTAB"
+    },
+    "armorTextureFile": "woodenkit____",
+    "helmetName": "§fWooden Helmet",
+    "bodyName": "§fWooden Chestplate",
+    "leggingsName": "§fWooden Leggings",
+    "bootsName": "§fRubber Boots",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 9,
+    "damageValueHelmet": 2,
+    "damageValueBody": 2,
+    "damageValueLeggings": 2,
+    "damageValueBoots": 1,
+    "enchantability": 0,
+    "toughness": 0.0
+  }
+}

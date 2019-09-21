@@ -1,0 +1,9 @@
+{
+  "parent": "minerustaddonsmod:custom/recycler",
+  "textures": {
+    "all": "minerustaddonsmod:blocks/recyclerimg",
+    "particle": "minerustaddonsmod:blocks/recyclerimg",
+    "mainimg": "minerustaddonsmod:blocks/recyclerimg",
+    "main": "minerustaddonsmod:blocks/recycler"
+  }
+}

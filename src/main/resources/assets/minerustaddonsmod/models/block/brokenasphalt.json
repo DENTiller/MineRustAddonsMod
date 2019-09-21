@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/brokenasphalt",
+    "up": "minerustaddonsmod:blocks/brokenasphalt",
+    "north": "minerustaddonsmod:blocks/brokenasphalt",
+    "east": "minerustaddonsmod:blocks/brokenasphalt",
+    "south": "minerustaddonsmod:blocks/brokenasphalt",
+    "west": "minerustaddonsmod:blocks/brokenasphalt",
+    "particle": "minerustaddonsmod:blocks/brokenasphalt"
+  }
+}

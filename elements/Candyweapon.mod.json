@@ -1,0 +1,20 @@
+{
+  "_fv": 3,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "candyweapon",
+    "customModelName": "Normal",
+    "name": "§fCandy weapon",
+    "creativeTab": {
+      "value": "CUSTOM:ToolsTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "enchantability": 0,
+    "damageVsEntity": 0.5,
+    "usageCount": 100,
+    "blocksAffected": []
+  }
+}

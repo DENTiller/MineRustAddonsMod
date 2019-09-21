@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/whitewood",
+    "up": "minerustaddonsmod:blocks/whitewood",
+    "north": "minerustaddonsmod:blocks/whitewood",
+    "east": "minerustaddonsmod:blocks/whitewood",
+    "south": "minerustaddonsmod:blocks/whitewood",
+    "west": "minerustaddonsmod:blocks/whitewood",
+    "particle": "minerustaddonsmod:blocks/whitewood"
+  }
+}

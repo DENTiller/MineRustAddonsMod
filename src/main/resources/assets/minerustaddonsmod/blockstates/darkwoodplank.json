@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:darkwoodplank"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:darkwoodplank"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:darkwoodplank",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:darkwoodplank",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:darkwoodplank",
+      "y": 270
+    }
+  }
+}

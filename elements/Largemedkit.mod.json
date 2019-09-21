@@ -1,0 +1,21 @@
+{
+  "_fv": 3,
+  "_type": "food",
+  "definition": {
+    "texture": "large_medkit",
+    "name": "§fLarge Medkit",
+    "creativeTab": {
+      "value": "CUSTOM:MedicalsTAB"
+    },
+    "stackSize": 2,
+    "nutritionalValue": 0,
+    "eatingSpeed": 62,
+    "forDogs": false,
+    "hasPotionEffect": true,
+    "isAlwaysEdible": false,
+    "potionEffect": {
+      "value": "REGENERATION"
+    },
+    "animation": "eat"
+  }
+}

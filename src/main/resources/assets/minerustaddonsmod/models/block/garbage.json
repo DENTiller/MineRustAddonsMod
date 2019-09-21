@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/garbage",
+    "up": "minerustaddonsmod:blocks/garbage",
+    "north": "minerustaddonsmod:blocks/garbage",
+    "east": "minerustaddonsmod:blocks/garbage",
+    "south": "minerustaddonsmod:blocks/garbage",
+    "west": "minerustaddonsmod:blocks/garbage",
+    "particle": "minerustaddonsmod:blocks/garbage"
+  }
+}

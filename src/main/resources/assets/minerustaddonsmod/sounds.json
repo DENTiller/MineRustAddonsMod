@@ -1,0 +1,209 @@
+{
+  "broke.wood": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:brokewood",
+        "stream": false
+      }
+    ]
+  },
+  "broke.stone": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:brokestone",
+        "stream": false
+      }
+    ]
+  },
+  "build.wood": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:buildwood",
+        "stream": false
+      }
+    ]
+  },
+  "eat.food": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:eat",
+        "stream": false
+      }
+    ]
+  },
+  "build.metal": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:buildmetal",
+        "stream": false
+      }
+    ]
+  },
+  "eat.infected": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:infectedeat",
+        "stream": false
+      }
+    ]
+  },
+  "build.stone": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:buildstone",
+        "stream": false
+      }
+    ]
+  },
+  "use.syringe": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:syringe",
+        "stream": false
+      }
+    ]
+  },
+  "build.armored": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:buildarmour",
+        "stream": false
+      }
+    ]
+  },
+  "broke.metal": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:brokemetal",
+        "stream": false
+      }
+    ]
+  },
+  "use.bandage": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:bandageuse",
+        "stream": false
+      }
+    ]
+  },
+  "chest.place": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:chestplace",
+        "stream": false
+      }
+    ]
+  },
+  "smallstash.open": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:smallstashopen",
+        "stream": false
+      }
+    ]
+  },
+  "chest.open": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:chestopen",
+        "stream": false
+      }
+    ]
+  },
+  "smallchestopen": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:smallchestopen",
+        "stream": false
+      }
+    ]
+  },
+  "smallstash.place": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:smallstashplace",
+        "stream": false
+      }
+    ]
+  },
+  "smallchest.place": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:smallchestplace",
+        "stream": false
+      }
+    ]
+  },
+  "broken.structure": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:brokenstructure",
+        "stream": false
+      }
+    ]
+  },
+  "bigstonewall.place": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:installbigstonewall",
+        "stream": false
+      }
+    ]
+  },
+  "broken.stone": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:brokenstone",
+        "stream": false
+      }
+    ]
+  },
+  "broken.wood": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:brokenwood",
+        "stream": false
+      }
+    ]
+  },
+  "metal.broken": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:metalbroken",
+        "stream": false
+      }
+    ]
+  },
+  "armored.broken": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:armoredbroken",
+        "stream": false
+      }
+    ]
+  }
+}

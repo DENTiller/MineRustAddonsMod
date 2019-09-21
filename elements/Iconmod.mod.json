@@ -1,0 +1,32 @@
+{
+  "_fv": 3,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "iconmod",
+    "customModelName": "Normal",
+    "name": "§f§lIcon Mod",
+    "creativeTab": {
+      "value": "CUSTOM:OtherTab"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "canBeDroppedAsGrassSeed": false,
+    "droppedAsGrassSeedProbability": 5,
+    "specialInfo": [
+      "Information about mod",
+      "--------------------",
+      "Author:DENTiller_YT",
+      "Version:§6 2.1 [R]",
+      "Official Group Mod [RU LINK]",
+      "§3vk.com/minerustclubminecraft",
+      "--------------------"
+    ],
+    "hasGlow": false
+  }
+}

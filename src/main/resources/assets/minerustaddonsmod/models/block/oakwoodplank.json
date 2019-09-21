@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/oakwoodplank",
+    "up": "minerustaddonsmod:blocks/oakwoodplank",
+    "north": "minerustaddonsmod:blocks/oakwoodplank",
+    "east": "minerustaddonsmod:blocks/oakwoodplank",
+    "south": "minerustaddonsmod:blocks/oakwoodplank",
+    "west": "minerustaddonsmod:blocks/oakwoodplank",
+    "particle": "minerustaddonsmod:blocks/oakwoodplank"
+  }
+}

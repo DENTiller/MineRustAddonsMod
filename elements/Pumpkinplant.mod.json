@@ -1,0 +1,30 @@
+{
+  "_fv": 3,
+  "_type": "plant",
+  "definition": {
+    "texture": "pumpkin",
+    "plantType": "normal",
+    "growapableSpawnType": "Desert",
+    "growapableMaxHeight": 3,
+    "name": "§fPumpkin plant",
+    "creativeTab": {
+      "value": "CUSTOM:GameplayTAB"
+    },
+    "hardness": 0.01,
+    "resistance": 2.0,
+    "luminance": 0.0,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "GROUND"
+    },
+    "enableCustomDrop": true,
+    "customDrop": {
+      "value": "CUSTOM:Pumpkin"
+    },
+    "dropAmount": 1,
+    "frequencyOnChunks": 20,
+    "spawnWorldTypes": [],
+    "restricPerBiome": false,
+    "restrictionBiomes": []
+  }
+}

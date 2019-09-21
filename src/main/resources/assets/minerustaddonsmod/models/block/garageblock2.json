@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/garage2",
+    "up": "minerustaddonsmod:blocks/garage2",
+    "north": "minerustaddonsmod:blocks/garage2",
+    "east": "minerustaddonsmod:blocks/garage2",
+    "south": "minerustaddonsmod:blocks/garage2",
+    "west": "minerustaddonsmod:blocks/garage2",
+    "particle": "minerustaddonsmod:blocks/garage2"
+  }
+}
