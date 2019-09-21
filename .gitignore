@@ -1,0 +1,10 @@
+.gradle
+.mcreator
+/gradle/
+/build/
+/run/
+
+build.gradle
+gradlew
+gradlew.bat
+mcreator.gradle
