@@ -446,6 +446,7 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		elements.add(new MCreatorBinoculars(this));
 		elements.add(new MCreatorPhotocamera(this));
 		elements.add(new MCreatorCustomsight(this));
+		elements.add(new MCreatorTEST21(this));
 	}
 
 	@Override

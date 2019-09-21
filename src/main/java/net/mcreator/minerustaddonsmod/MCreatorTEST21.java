@@ -11,12 +11,12 @@ import net.minecraft.item.Item;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-public class MCreatorBattery extends minerustaddonsmod.ModElement {
+public class MCreatorTEST21 extends minerustaddonsmod.ModElement {
 
-	@GameRegistry.ObjectHolder("minerustaddonsmod:battery")
+	@GameRegistry.ObjectHolder("minerustaddonsmod:test21")
 	public static final Item block = null;
 
-	public MCreatorBattery(minerustaddonsmod instance) {
+	public MCreatorTEST21(minerustaddonsmod instance) {
 		super(instance);
 		instance.items.add(() -> new ItemCustom());
 	}
@@ -24,7 +24,7 @@ public class MCreatorBattery extends minerustaddonsmod.ModElement {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("minerustaddonsmod:battery", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("minerustaddonsmod:test21", "inventory"));
 	}
 
 	public static class ItemCustom extends Item {
@@ -32,9 +32,9 @@ public class MCreatorBattery extends minerustaddonsmod.ModElement {
 		public ItemCustom() {
 			setMaxDamage(0);
 			maxStackSize = 1;
-			setUnlocalizedName("battery");
-			setRegistryName("battery");
-			setCreativeTab(MCreatorResourcesTab.tab);
+			setUnlocalizedName("test21");
+			setRegistryName("test21");
+			setCreativeTab(MCreatorToolsTab.tab);
 		}
 
 		@Override

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "smallgift",
+    "texture": "metalore",
     "customModelName": "Normal",
-    "name": "§eSmall Gift",
+    "name": "dfdf",
     "creativeTab": {
-      "value": "CUSTOM:OtherTab"
+      "value": "CUSTOM:ToolsTab"
     },
     "stackSize": 1,
     "enchantability": 0,
