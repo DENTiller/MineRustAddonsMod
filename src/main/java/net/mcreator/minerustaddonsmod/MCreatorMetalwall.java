@@ -18,6 +18,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.multiplayer.PlayerControllerMP;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.properties.PropertyDirection;
@@ -31,8 +32,6 @@ import java.util.List;
 import java.util.HashMap;
 
 public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
-
-	public static int Durability = 5;
 
 	@GameRegistry.ObjectHolder("minerustaddonsmod:metalwall")
 	public static final Block block = null;
@@ -52,6 +51,8 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 
 	public static class BlockCustom extends Block {
 
+		public int Durability = 5;
+		
 		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
 		public BlockCustom() {
@@ -59,8 +60,8 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 			setRegistryName("metalwall");
 			setUnlocalizedName("metalwall");
 			setSoundType(SoundType.METAL);
-			setHarvestLevel("pickaxe", 7);
-			setHardness(50F);
+			setHarvestLevel("pickaxe", 0);
+			setHardness(3F);
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
@@ -94,15 +95,6 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 		@Override
 		public int getMetaFromState(IBlockState state) {
 			return ((EnumFacing) state.getValue(FACING)).getIndex();
-		}
-
-		@Override
-		public void breakBlock(World world, BlockPos pos, IBlockState state) {
-			if(--Durability<=0)
-			{
-				/*world.removeTileEntity(pos);
-				super.breakBlock(world, pos, state);*/
-			}
 		}
 
 		@Override
@@ -146,6 +138,13 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 			}
 		}
 
+		
+		
+		@Override
+		public void onBlockDestroyedByPlayer(World worldIn, BlockPos pos, IBlockState state) {
+			worldIn.setBlockState(pos, getDefaultState(), 11);
+		}
+		
 		@Override
 		public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack itemstack) {
 			super.onBlockPlacedBy(world, pos, state, entity, itemstack);
