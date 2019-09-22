@@ -1,45 +1,44 @@
 package net.mcreator.minerustaddonsmod;
 
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumBlockRenderType;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.tileentity.TileEntityLockableLoot;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.Item;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.inventory.InventoryHelper;
-import net.minecraft.inventory.ContainerDispenser;
-import net.minecraft.inventory.Container;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.ITileEntityProvider;
-import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
-
-import java.util.HashMap;
+import net.minecraft.block.BlockFalling;
+import net.minecraft.block.BlockHorizontal;
+import net.minecraft.block.ITileEntityProvider;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ContainerDispenser;
+import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.inventory.ItemStackHelper;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityLockableLoot;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class MCreatorSmallstash extends minerustaddonsmod.ModElement {
 
@@ -64,7 +63,7 @@ public class MCreatorSmallstash extends minerustaddonsmod.ModElement {
 				"inventory"));
 	}
 
-	public static class BlockCustom extends Block implements ITileEntityProvider {
+	public static class BlockCustom extends BlockFalling implements ITileEntityProvider {
 
 		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
@@ -73,7 +72,6 @@ public class MCreatorSmallstash extends minerustaddonsmod.ModElement {
 			setRegistryName("smallstash");
 			setUnlocalizedName("smallstash");
 			setSoundType(SoundType.CLOTH);
-			setHarvestLevel("pickaxe", 1);
 			setHardness(4F);
 			setResistance(10F);
 			setLightLevel(0F);
@@ -100,6 +98,12 @@ public class MCreatorSmallstash extends minerustaddonsmod.ModElement {
 		}
 
 		@Override
+		public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
+	    {
+	        return (worldIn.getBlockState(pos).getBlock().isReplaceable(worldIn, pos) && worldIn.getBlockState(pos.down()).getBlock() == Blocks.GRASS);
+	    }
+		
+		@Override
 		public boolean isFullCube(IBlockState state) {
 			return false;
 		}
@@ -111,13 +115,13 @@ public class MCreatorSmallstash extends minerustaddonsmod.ModElement {
 				case DOWN :
 				case SOUTH :
 				default :
-					return new AxisAlignedBB(1D, 0D, 1D, 0D, 0.4D, 0D);
+					return new AxisAlignedBB(0.6875D, 0D, 0.75D, 0.3125D, 0.125D, 0.25D);
 				case NORTH :
-					return new AxisAlignedBB(0D, 0D, 0D, 1D, 0.4D, 1D);
+					return new AxisAlignedBB(0.3125D, 0D, 0.25D, 0.6875D, 0.125D, 0.75D);
 				case WEST :
-					return new AxisAlignedBB(0D, 0D, 1D, 1D, 0.4D, 0D);
+					return new AxisAlignedBB(0.25D, 0D, 0.6875D, 0.75D, 0.125D, 0.3125D);
 				case EAST :
-					return new AxisAlignedBB(1D, 0D, 0D, 0D, 0.4D, 1D);
+					return new AxisAlignedBB(0.75D, 0D, 0.3125D, 0.25D, 0.125D, 0.6875D);
 			}
 		}
 
@@ -189,23 +193,6 @@ public class MCreatorSmallstash extends minerustaddonsmod.ModElement {
 				return Container.calcRedstoneFromInventory((TileEntityCustom) tileentity);
 			else
 				return 0;
-		}
-
-		@Override
-		public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack itemstack) {
-			super.onBlockPlacedBy(world, pos, state, entity, itemstack);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			Block block = this;
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MCreatorSmallstashplace.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

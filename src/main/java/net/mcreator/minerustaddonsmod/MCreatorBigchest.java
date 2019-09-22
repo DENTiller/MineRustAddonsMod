@@ -37,6 +37,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.BlockHorizontal;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.Block;
 
 import java.util.HashMap;
@@ -64,7 +65,7 @@ public class MCreatorBigchest extends minerustaddonsmod.ModElement {
 				"inventory"));
 	}
 
-	public static class BlockCustom extends Block implements ITileEntityProvider {
+	public static class BlockCustom extends BlockFalling implements ITileEntityProvider {
 
 		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 

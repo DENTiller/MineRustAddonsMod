@@ -24,7 +24,7 @@
       "§fLevel Protection : §a[3] §a",
       "- It breaks hard"
     ],
-    "hardness": 6000.0,
+    "hardness": 50.0,
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {

@@ -2,17 +2,22 @@ package net.mcreator.minerustaddonsmod;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 
 import java.util.HashMap;
+import java.util.Random;
 
 public class MCreatorHayfloorupinwood extends minerustaddonsmod.ModElement {
 
+	protected static final Random random = new Random();
+	
 	public MCreatorHayfloorupinwood(minerustaddonsmod instance) {
 		super(instance);
 	}
@@ -53,7 +58,7 @@ public class MCreatorHayfloorupinwood extends minerustaddonsmod.ModElement {
 		}.stack()).getItem() == new ItemStack(MCreatorUpinwood.block, (int) (1)).getItem())) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), MCreatorWoodfloor.block.getDefaultState(), 3);
 			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-					.getObject(new ResourceLocation("minerustaddonsmod:build.wood")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					.getObject(new ResourceLocation("minerustaddonsmod:build.wood"+String.valueOf(random.nextInt(2)+1))), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			if (entity instanceof EntityPlayer)
 				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(MCreatorUpinwood.block, (int) (1)).getItem(), -1, (int) 1, null);
 		}

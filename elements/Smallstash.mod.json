@@ -13,17 +13,17 @@
     "rotationMode": 1,
     "hasTransparency": true,
     "transparencyType": "SOLID",
-    "mx": 0.0,
+    "mx": 0.3125,
     "my": 0.0,
-    "mz": 0.0,
-    "Mx": 1.0,
-    "My": 0.4,
-    "Mz": 1.0,
+    "mz": 0.25,
+    "Mx": 0.6875,
+    "My": 0.125,
+    "Mz": 0.75,
     "name": "§fSmall Stash",
     "specialInfo": [],
     "hardness": 4.0,
     "resistance": 10.0,
-    "hasGravity": false,
+    "hasGravity": true,
     "creativeTab": {
       "value": "CUSTOM:GameplayTAB"
     },
@@ -55,7 +55,7 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
+    "particleSpawningRadious": 0.49999999850988386,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": true,
@@ -67,20 +67,13 @@
     "onRightClicked": {
       "name": "SmallstashOpen"
     },
-    "onBlockPlayedBy": {
-      "name": "Smallstashplace"
-    },
     "spawnWorldTypes": [],
     "restricPerBiome": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 10,
-    "maxGenerateHeight": 110
+    "maxGenerateHeight": 111
   }
 }

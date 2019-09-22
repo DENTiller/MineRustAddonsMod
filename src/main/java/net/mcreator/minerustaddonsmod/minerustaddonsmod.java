@@ -338,7 +338,6 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		elements.add(new MCreatorMuqoreblock(this));
 		elements.add(new MCreatorBuildingplanuse(this));
 		elements.add(new MCreatorSmallchestplace(this));
-		elements.add(new MCreatorSmallstashplace(this));
 		elements.add(new MCreatorBigstonewallplace(this));
 		elements.add(new MCreatorStone15(this));
 		elements.add(new MCreatorMetal40(this));
@@ -494,7 +493,7 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound0).setRegistryName(sound0));
 		ResourceLocation sound1 = new ResourceLocation("minerustaddonsmod", "broke.stone");
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound1).setRegistryName(sound1));
-		ResourceLocation sound2 = new ResourceLocation("minerustaddonsmod", "build.wood");
+		ResourceLocation sound2 = new ResourceLocation("minerustaddonsmod", "build.wood1");
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound2).setRegistryName(sound2));
 		ResourceLocation sound3 = new ResourceLocation("minerustaddonsmod", "eat.food");
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound3).setRegistryName(sound3));
@@ -536,6 +535,8 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound21).setRegistryName(sound21));
 		ResourceLocation sound22 = new ResourceLocation("minerustaddonsmod", "armored.broken");
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound22).setRegistryName(sound22));
+		ResourceLocation sound23 = new ResourceLocation("minerustaddonsmod", "build.wood2");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound23).setRegistryName(sound23));
 	}
 
 	@SubscribeEvent

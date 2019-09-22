@@ -32,6 +32,8 @@ import java.util.HashMap;
 
 public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 
+	public static int Durability = 5;
+
 	@GameRegistry.ObjectHolder("minerustaddonsmod:metalwall")
 	public static final Block block = null;
 
@@ -58,7 +60,7 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 			setUnlocalizedName("metalwall");
 			setSoundType(SoundType.METAL);
 			setHarvestLevel("pickaxe", 7);
-			setHardness(6000F);
+			setHardness(50F);
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
@@ -92,6 +94,15 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 		@Override
 		public int getMetaFromState(IBlockState state) {
 			return ((EnumFacing) state.getValue(FACING)).getIndex();
+		}
+
+		@Override
+		public void breakBlock(World world, BlockPos pos, IBlockState state) {
+			if(--Durability<=0)
+			{
+				/*world.removeTileEntity(pos);
+				super.breakBlock(world, pos, state);*/
+			}
 		}
 
 		@Override

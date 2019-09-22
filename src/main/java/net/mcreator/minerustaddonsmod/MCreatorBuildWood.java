@@ -1,14 +1,16 @@
 package net.mcreator.minerustaddonsmod;
 
-import net.minecraft.world.World;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.player.EntityPlayer;
+import java.util.Random;
 
-import java.util.HashMap;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.world.World;
 
 public class MCreatorBuildWood extends minerustaddonsmod.ModElement {
 
+	protected static final Random random = new Random();
+	
 	public MCreatorBuildWood(minerustaddonsmod instance) {
 		super(instance);
 	}
@@ -35,6 +37,6 @@ public class MCreatorBuildWood extends minerustaddonsmod.ModElement {
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-				.getObject(new ResourceLocation("minerustaddonsmod:build.wood")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				.getObject(new ResourceLocation(("minerustaddonsmod:build.wood"+String.valueOf(random.nextInt(2)+1)))), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 	}
 }
