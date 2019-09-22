@@ -409,5 +409,66 @@
         }
       }
     }
-  ]
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [
+        0.25,
+        0.28,
+        0.21
+      ]
+    },
+    "thirdperson_lefthand": {
+      "scale": [
+        0.25,
+        0.28,
+        0.21
+      ]
+    },
+    "firstperson_righthand": {
+      "scale": [
+        0.55,
+        0.4,
+        0.2
+      ]
+    },
+    "firstperson_lefthand": {
+      "scale": [
+        0.55,
+        0.38,
+        0.23
+      ]
+    },
+    "ground": {
+      "scale": [
+        0.36,
+        0.4,
+        0.3
+      ]
+    },
+    "gui": {
+      "rotation": [
+        1,
+        -28,
+        0
+      ],
+      "translation": [
+        0,
+        -3,
+        0
+      ],
+      "scale": [
+        0.46,
+        0.46,
+        0.45
+      ]
+    },
+    "head": {
+      "scale": [
+        0.93,
+        0.63,
+        1.52
+      ]
+    }
+  }
 }

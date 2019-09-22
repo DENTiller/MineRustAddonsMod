@@ -9,8 +9,9 @@
 	"elements": [
 		{
 			"name": "Cube",
-			"from": [-2, 0, 2],
-			"to": [18, 10, 14],
+			"from": [0, 0, 2],
+			"to": [16, 9, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 6]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 15], "texture": "#0"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
@@ -20,5 +21,27 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#3"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.38, 0.43, 0.36]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.38, 0.43, 0.36]
+		},
+		"firstperson_righthand": {
+			"translation": [-7, -10.75, -3.75]
+		},
+		"firstperson_lefthand": {
+			"translation": [-10.25, -7.5, 0]
+		},
+		"ground": {
+			"scale": [0.55, 0.43, 0.41]
+		},
+		"gui": {
+			"rotation": [19, 153, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.53, 0.56, 0.55]
+		}
+	}
 }
