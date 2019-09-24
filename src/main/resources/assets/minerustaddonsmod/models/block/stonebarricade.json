@@ -1,0 +1,10 @@
+{
+  "parent": "minerustaddonsmod:custom/stonebarricade",
+  "textures": {
+    "all": "minerustaddonsmod:blocks/stonebarricadetex",
+    "particle": "minerustaddonsmod:blocks/stonebarricadetex",
+    "1": "minerustaddonsmod:blocks/stonetex21",
+    "3": "minerustaddonsmod:blocks/stonebarricadetex",
+    "missing": "minerustaddonsmod:blocks/stonebarricadetex"
+  }
+}

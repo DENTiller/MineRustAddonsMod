@@ -6,6 +6,6 @@
     "0": "minerustaddonsmod:blocks/hayfloor",
     "1": "minerustaddonsmod:blocks/haywall",
     "2": "minerustaddonsmod:blocks/haydetails2",
-    "missing": "minerustaddonsmod:blocks/haydetails2"
+    "missing": "minerustaddonsmod:blocks/haywall"
   }
 }

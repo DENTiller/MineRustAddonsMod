@@ -1,0 +1,48 @@
+{
+  "_fv": 3,
+  "_type": "recipe",
+  "definition": {
+    "recipeRetstackSize": 2,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:Resbone"
+    },
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Scullhuman"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "smeltingXPReward": 1.0,
+    "smeltingRetstackSize": 1
+  }
+}

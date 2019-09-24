@@ -1,0 +1,9 @@
+{
+  "parent": "minerustaddonsmod:custom/planksblock",
+  "textures": {
+    "all": "minerustaddonsmod:blocks/woodfloor",
+    "particle": "minerustaddonsmod:blocks/woodfloor",
+    "0": "minerustaddonsmod:blocks/woodfloor",
+    "1": "minerustaddonsmod:blocks/woodwall"
+  }
+}

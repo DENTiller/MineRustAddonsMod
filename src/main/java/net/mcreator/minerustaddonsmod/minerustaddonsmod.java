@@ -445,6 +445,66 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		elements.add(new MCreatorBinoculars(this));
 		elements.add(new MCreatorPhotocamera(this));
 		elements.add(new MCreatorCustomsight(this));
+		elements.add(new MCreatorAssemblychips(this));
+		elements.add(new MCreatorAveragerustcase(this));
+		elements.add(new MCreatorBearskull(this));
+		elements.add(new MCreatorBigrustcase(this));
+		elements.add(new MCreatorBlueelectricaltape(this));
+		elements.add(new MCreatorBolts(this));
+		elements.add(new MCreatorBronzeegg(this));
+		elements.add(new MCreatorEmptyrustycan(this));
+		elements.add(new MCreatorFewchip(this));
+		elements.add(new MCreatorSmallfishs(this));
+		elements.add(new MCreatorGoldegg(this));
+		elements.add(new MCreatorButt(this));
+		elements.add(new MCreatorImprovedsewingkit(this));
+		elements.add(new MCreatorJunkdetails(this));
+		elements.add(new MCreatorMuzzleCompensatorMedium(this));
+		elements.add(new MCreatorMuzzleflashhider(this));
+		elements.add(new MCreatorMuzzleCompensators(this));
+		elements.add(new MCreatorMuzzleCompensatorlight(this));
+		elements.add(new MCreatorMuzzleFlashHiderlight(this));
+		elements.add(new MCreatorMuzzleFlashHidersmall(this));
+		elements.add(new MCreatorNails(this));
+		elements.add(new MCreatorNippers(this));
+		elements.add(new MCreatorSilveregg(this));
+		elements.add(new MCreatorSmallrustcase(this));
+		elements.add(new MCreatorSpirit(this));
+		elements.add(new MCreatorStrongrope(this));
+		elements.add(new MCreatorSuperglue(this));
+		elements.add(new MCreatorSyringecraft(this));
+		elements.add(new MCreatorTacticalstockcapture(this));
+		elements.add(new MCreatorTools(this));
+		elements.add(new MCreatorVerticalhandle(this));
+		elements.add(new MCreatorWheels(this));
+		elements.add(new MCreatorWires(this));
+		elements.add(new MCreatorZombiebearflesh(this));
+		elements.add(new MCreatorZombiechickenflesh(this));
+		elements.add(new MCreatorZombiehorseflesh(this));
+		elements.add(new MCreatorZombiewolfflesh(this));
+		elements.add(new MCreatorHumanskulldestroyinbone(this));
+		elements.add(new MCreatorAnimalskulldestroyinbone(this));
+		elements.add(new MCreatorBearskulldestroyinbone(this));
+		elements.add(new MCreatorAmmobox(this));
+		elements.add(new MCreatorBoxammopistol(this));
+		elements.add(new MCreatorBox12Guages(this));
+		elements.add(new MCreatorBoxammo556(this));
+		elements.add(new MCreatorAngledForeGrip(this));
+		elements.add(new MCreatorUziStock(this));
+		elements.add(new MCreatorProjectTAB(this));
+		elements.add(new MCreatorMrcoin(this));
+		elements.add(new MCreatorMrdiamond(this));
+		elements.add(new MCreatorBronzekey(this));
+		elements.add(new MCreatorSilverkey(this));
+		elements.add(new MCreatorGoldkey(this));
+		elements.add(new MCreatorMapopengui(this));
+		elements.add(new MCreatorMapopen(this));
+		elements.add(new MCreatorCreativeupgradehammer(this));
+		elements.add(new MCreatorWoodplanksblock(this));
+		elements.add(new MCreatorWoodbarricade(this));
+		elements.add(new MCreatorStonebarricade(this));
+		elements.add(new MCreatorSandbags(this));
+		elements.add(new MCreatorWoodwindow(this));
 	}
 
 	@Override
@@ -576,6 +636,8 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 				return new MCreatorSmallchestgui.GuiContainerMod(world, x, y, z, player);
 			if (id == MCreatorBigchestgui.GUIID)
 				return new MCreatorBigchestgui.GuiContainerMod(world, x, y, z, player);
+			if (id == MCreatorMapopengui.GUIID)
+				return new MCreatorMapopengui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -587,6 +649,8 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 				return new MCreatorSmallchestgui.GuiWindow(world, x, y, z, player);
 			if (id == MCreatorBigchestgui.GUIID)
 				return new MCreatorBigchestgui.GuiWindow(world, x, y, z, player);
+			if (id == MCreatorMapopengui.GUIID)
+				return new MCreatorMapopengui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

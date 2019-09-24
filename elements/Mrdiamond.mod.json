@@ -1,0 +1,27 @@
+{
+  "_fv": 0,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "mrdiamond",
+    "customModelName": "Normal",
+    "name": "§b§l? MINERUST - DIAMOND ?",
+    "creativeTab": {
+      "value": "CUSTOM:ProjectTAB"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "canBeDroppedAsGrassSeed": false,
+    "droppedAsGrassSeedProbability": 5,
+    "specialInfo": [
+      "§3§lДонатная валюта проекта.",
+      "§3§lПотратье их в торговом комплексе."
+    ],
+    "hasGlow": false
+  }
+}

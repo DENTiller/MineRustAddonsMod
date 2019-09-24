@@ -42,7 +42,7 @@ public class MCreatorPumpkinplant extends minerustaddonsmod.ModElement {
 		public BlockCustomFlower() {
 			setSoundType(SoundType.GROUND);
 			setCreativeTab(MCreatorGameplayTAB.tab);
-			setHardness(0.01F);
+			setHardness(0.31F);
 			setResistance(2F);
 			setLightLevel(0F);
 			setUnlocalizedName("pumpkinplant");

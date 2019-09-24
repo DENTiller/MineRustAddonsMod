@@ -2,7 +2,7 @@
   "_fv": 3,
   "_type": "block",
   "definition": {
-    "texture": "metalinside",
+    "texture": "metaldown",
     "textureTop": "metalfloor",
     "textureLeft": "metalwall",
     "textureFront": "metalwall",

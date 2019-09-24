@@ -1,0 +1,24 @@
+{
+  "_fv": 3,
+  "_type": "food",
+  "definition": {
+    "texture": "zombiehorseflesh",
+    "name": "§fZombie horse flesh",
+    "creativeTab": {
+      "value": "CUSTOM:FoodsTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 0,
+    "eatingSpeed": 32,
+    "forDogs": false,
+    "hasPotionEffect": true,
+    "isAlwaysEdible": false,
+    "potionEffect": {
+      "value": "POISON"
+    },
+    "animation": "eat",
+    "onEaten": {
+      "name": "InfectedEAT"
+    }
+  }
+}

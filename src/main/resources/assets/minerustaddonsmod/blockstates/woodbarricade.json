@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:woodbarricade"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:woodbarricade"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:woodbarricade",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:woodbarricade",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:woodbarricade",
+      "y": 270
+    }
+  }
+}

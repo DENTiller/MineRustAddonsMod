@@ -4,7 +4,7 @@
   "definition": {
     "name": "MineRust Addon Gameplay",
     "icon": {
-      "value": "CUSTOM:Lootboxdecor"
+      "value": "CUSTOM:Hammer"
     },
     "showSearch": false
   }

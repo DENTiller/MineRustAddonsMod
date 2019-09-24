@@ -22,7 +22,7 @@ public class MCreatorDecorationsTAB extends minerustaddonsmod.ModElement {
 
 		@SideOnly(Side.CLIENT)
 		public boolean hasSearchBar() {
-			return false;
+			return true;
 		}
-	};
+	}.setBackgroundImageName("item_search.png");
 }

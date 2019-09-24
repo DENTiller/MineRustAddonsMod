@@ -74,6 +74,11 @@ public class MCreatorHayWall extends minerustaddonsmod.ModElement {
 		}
 
 		@Override
+		public boolean canSilkHarvest(World world, BlockPos pos, IBlockState state, EntityPlayer player) {
+			return false;
+		}
+
+		@Override
 		public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer entity, boolean willHarvest) {
 			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest);
 			int x = pos.getX();

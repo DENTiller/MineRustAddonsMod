@@ -1,0 +1,10 @@
+{
+  "parent": "minerustaddonsmod:custom/woodwindow",
+  "textures": {
+    "all": "minerustaddonsmod:blocks/whitewoodplank",
+    "particle": "minerustaddonsmod:blocks/whitewoodplank",
+    "0": "minerustaddonsmod:blocks/whitewoodplank",
+    "1": "minerustaddonsmod:blocks/woodfloor",
+    "missing": "minerustaddonsmod:blocks/woodfloor"
+  }
+}

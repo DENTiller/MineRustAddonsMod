@@ -17,7 +17,7 @@ public class MCreatorGameplayTAB extends minerustaddonsmod.ModElement {
 		@SideOnly(Side.CLIENT)
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(MCreatorLootboxdecor.block, (int) (1));
+			return new ItemStack(MCreatorHammer.block, (int) (1));
 		}
 
 		@SideOnly(Side.CLIENT)

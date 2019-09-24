@@ -1,0 +1,83 @@
+{
+  "_fv": 3,
+  "_type": "block",
+  "definition": {
+    "texture": "woodfloor",
+    "textureTop": "woodfloor",
+    "textureLeft": "woodfloor",
+    "textureFront": "woodfloor",
+    "textureRight": "woodfloor",
+    "textureBack": "woodfloor",
+    "renderType": 2,
+    "customModelName": "woodbarricade:default",
+    "rotationMode": 1,
+    "hasTransparency": true,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 2.0,
+    "Mz": 1.0,
+    "name": "§fWood barricade",
+    "specialInfo": [],
+    "hardness": 55.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "creativeTab": {
+      "value": "CUSTOM:DecorationsTAB"
+    },
+    "destroyTool": "axe",
+    "affectedBySilkTouch": true,
+    "hasCustomDrop": true,
+    "customDrop": {
+      "value": "CUSTOM:Piecewood"
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "WOOD"
+    },
+    "tickRate": 10,
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "WOOD"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 0,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "onDestroyedByPlayer": {
+      "name": "WoodBrokenExp"
+    },
+    "spawnWorldTypes": [],
+    "restricPerBiome": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 10,
+    "maxGenerateHeight": 110
+  }
+}

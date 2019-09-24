@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minerustaddonsmod:blocks/sandbags",
+    "up": "minerustaddonsmod:blocks/sandbags",
+    "north": "minerustaddonsmod:blocks/sandbags",
+    "east": "minerustaddonsmod:blocks/sandbags",
+    "south": "minerustaddonsmod:blocks/sandbags",
+    "west": "minerustaddonsmod:blocks/sandbags",
+    "particle": "minerustaddonsmod:blocks/sandbags"
+  }
+}

@@ -2,7 +2,7 @@
   "_fv": 3,
   "_type": "block",
   "definition": {
-    "texture": "armourfloor",
+    "texture": "armoreddown",
     "textureTop": "armoredfloorup",
     "textureLeft": "armourfloor",
     "textureFront": "armourfloor",

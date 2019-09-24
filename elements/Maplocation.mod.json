@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "map",
     "customModelName": "Normal",
-    "name": "§dLocation Map",
+    "name": "§fMap",
     "creativeTab": {
       "value": "CUSTOM:OtherTab"
     },
@@ -19,6 +19,9 @@
     "canBeDroppedAsGrassSeed": false,
     "droppedAsGrassSeedProbability": 5,
     "specialInfo": [],
-    "hasGlow": false
+    "hasGlow": false,
+    "onRightClickedInAir": {
+      "name": "Mapopen"
+    }
   }
 }

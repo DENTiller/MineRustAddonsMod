@@ -57,5 +57,17 @@ public class MCreatorHayWallupwood extends minerustaddonsmod.ModElement {
 			if (entity instanceof EntityPlayer)
 				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(MCreatorUpinwood.block, (int) (1)).getItem(), -1, (int) 1, null);
 		}
+		if (((new Object() {
+
+			ItemStack stack() {
+				ItemStack stack = ((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).copy();
+				stack.setCount(1);
+				return stack;
+			}
+		}.stack()).getItem() == new ItemStack(MCreatorCreativeupgradehammer.block, (int) (1)).getItem())) {
+			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("minerustaddonsmod:build.wood")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), MCreatorWoodwall.block.getDefaultState(), 3);
+		}
 	}
 }

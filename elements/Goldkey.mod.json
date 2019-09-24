@@ -1,0 +1,29 @@
+{
+  "_fv": 0,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "goldkey",
+    "customModelName": "Normal",
+    "name": "§a§l? Ключ к золотому кейсу",
+    "creativeTab": {
+      "value": "CUSTOM:ProjectTAB"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "canBeDroppedAsGrassSeed": false,
+    "droppedAsGrassSeedProbability": 5,
+    "specialInfo": [
+      "§e§lКлюч к  золотому кейсу.",
+      "§e§lВоспользуйтесь им чтобы открыть",
+      "§e§lпросто кейс и получить",
+      "§e§lрандомный предмет."
+    ],
+    "hasGlow": false
+  }
+}

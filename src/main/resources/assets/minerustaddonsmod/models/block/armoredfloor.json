@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "minerustaddonsmod:blocks/armourfloor",
+    "down": "minerustaddonsmod:blocks/armoreddown",
     "up": "minerustaddonsmod:blocks/armoredfloorup",
     "north": "minerustaddonsmod:blocks/armourfloor",
     "east": "minerustaddonsmod:blocks/armourfloor",
     "south": "minerustaddonsmod:blocks/armourfloor",
     "west": "minerustaddonsmod:blocks/armourfloor",
-    "particle": "minerustaddonsmod:blocks/armourfloor"
+    "particle": "minerustaddonsmod:blocks/armoreddown"
   }
 }

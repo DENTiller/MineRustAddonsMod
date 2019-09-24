@@ -31,7 +31,7 @@
       "value": "CUSTOM:BuildingBlock"
     },
     "destroyTool": "axe",
-    "affectedBySilkTouch": true,
+    "affectedBySilkTouch": false,
     "hasCustomDrop": false,
     "customDrop": {
       "value": ""

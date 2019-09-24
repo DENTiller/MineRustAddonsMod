@@ -10,7 +10,7 @@
     "creativeTab": {
       "value": "CUSTOM:GameplayTAB"
     },
-    "hardness": 0.01,
+    "hardness": 0.31,
     "resistance": 2.0,
     "luminance": 0.0,
     "unbreakable": false,

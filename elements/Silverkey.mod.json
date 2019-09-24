@@ -1,0 +1,29 @@
+{
+  "_fv": 0,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "silverkey",
+    "customModelName": "Normal",
+    "name": "§6§l? Ключ к серебряному кейсу",
+    "creativeTab": {
+      "value": "CUSTOM:ProjectTAB"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "canBeDroppedAsGrassSeed": false,
+    "droppedAsGrassSeedProbability": 5,
+    "specialInfo": [
+      "§e§lКлюч к  серебряному кейсу.",
+      "§e§lВоспользуйтесь им чтобы открыть",
+      "§e§lпросто кейс и получить",
+      "§e§lрандомный предмет."
+    ],
+    "hasGlow": false
+  }
+}

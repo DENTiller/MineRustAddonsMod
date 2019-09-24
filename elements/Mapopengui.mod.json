@@ -1,0 +1,27 @@
+{
+  "_fv": 3,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "containerBlock": "\u003cnone\u003e",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Map not by installed...",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Map not by installed...",
+          "x": 320,
+          "y": 207
+        }
+      }
+    ],
+    "inventories": []
+  }
+}

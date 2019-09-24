@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:woodwindow"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:woodwindow"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:woodwindow",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:woodwindow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:woodwindow",
+      "y": 270
+    }
+  }
+}

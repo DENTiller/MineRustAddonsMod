@@ -62,7 +62,7 @@ public class MCreatorIconmod extends minerustaddonsmod.ModElement {
 			list.add("Information about mod");
 			list.add("--------------------");
 			list.add("Author:DENTiller_YT");
-			list.add("Version:\u00A76 2.1 [R]");
+			list.add("Version:\u00A76 2.2 [R]");
 			list.add("Official Group Mod [RU LINK]");
 			list.add("\u00A73vk.com/minerustclubminecraft");
 			list.add("--------------------");

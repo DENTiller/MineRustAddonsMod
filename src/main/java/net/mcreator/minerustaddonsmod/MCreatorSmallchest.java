@@ -101,13 +101,13 @@ public class MCreatorSmallchest extends minerustaddonsmod.ModElement {
 				case DOWN :
 				case SOUTH :
 				default :
-					return new AxisAlignedBB(1D, 0D, 1D, 0D, 0.3D, 0D);
+					return new AxisAlignedBB(0.8125D, 0D, 0.75D, 0.1875D, 0.375D, 0.25D);
 				case NORTH :
-					return new AxisAlignedBB(0D, 0D, 0D, 1D, 0.3D, 1D);
+					return new AxisAlignedBB(0.1875D, 0D, 0.25D, 0.8125D, 0.375D, 0.75D);
 				case WEST :
-					return new AxisAlignedBB(0D, 0D, 1D, 1D, 0.3D, 0D);
+					return new AxisAlignedBB(0.25D, 0D, 0.8125D, 0.75D, 0.375D, 0.1875D);
 				case EAST :
-					return new AxisAlignedBB(1D, 0D, 0D, 0D, 0.3D, 1D);
+					return new AxisAlignedBB(0.75D, 0D, 0.1875D, 0.25D, 0.375D, 0.8125D);
 			}
 		}
 

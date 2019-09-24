@@ -4,7 +4,7 @@
     "all": "minerustaddonsmod:blocks/woodwall",
     "particle": "minerustaddonsmod:blocks/woodwall",
     "0": "minerustaddonsmod:blocks/whitewoodplank",
-    "1": "minerustaddonsmod:blocks/wooddeafult",
+    "1": "minerustaddonsmod:blocks/woodfloor",
     "2": "minerustaddonsmod:blocks/woodwall",
     "missing": "minerustaddonsmod:blocks/woodwall"
   }

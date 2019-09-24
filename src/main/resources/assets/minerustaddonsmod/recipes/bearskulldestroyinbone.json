@@ -1,0 +1,16 @@
+{
+  "group": "minerustaddonsmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "minerustaddonsmod:bearskull"
+    }
+  },
+  "result": {
+    "item": "minerustaddonsmod:resbone",
+    "count": 2
+  }
+}

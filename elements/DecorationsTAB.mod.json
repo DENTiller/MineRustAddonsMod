@@ -6,6 +6,6 @@
     "icon": {
       "value": "CUSTOM:Metal27"
     },
-    "showSearch": false
+    "showSearch": true
   }
 }

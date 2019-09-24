@@ -17,7 +17,7 @@ public class MCreatorBuildingBlock extends minerustaddonsmod.ModElement {
 		@SideOnly(Side.CLIENT)
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(MCreatorMetalfloor.block, (int) (1));
+			return new ItemStack(MCreatorMetalwall.block, (int) (1));
 		}
 
 		@SideOnly(Side.CLIENT)
