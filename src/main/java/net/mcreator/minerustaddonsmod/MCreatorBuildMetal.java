@@ -1,8 +1,10 @@
 package net.mcreator.minerustaddonsmod;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.entity.player.EntityPlayer;
 
 import java.util.HashMap;
@@ -36,5 +38,10 @@ public class MCreatorBuildMetal extends minerustaddonsmod.ModElement {
 		World world = (World) dependencies.get("world");
 		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
 				.getObject(new ResourceLocation("minerustaddonsmod:build.metal")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		{
+			TileEntity tileEntity = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+			if (tileEntity != null)
+				tileEntity.getTileData().setDouble("blockHealth", 10);
+		}
 	}
 }

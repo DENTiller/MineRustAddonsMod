@@ -1,8 +1,10 @@
 package net.mcreator.minerustaddonsmod;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.entity.player.EntityPlayer;
 
 import java.util.HashMap;
@@ -34,7 +36,31 @@ public class MCreatorBrokeMetal extends minerustaddonsmod.ModElement {
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-				.getObject(new ResourceLocation("minerustaddonsmod:broke.metal")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		if (((new Object() {
+
+			public double getValue(BlockPos pos) {
+				TileEntity tileEntity = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (tileEntity != null)
+					return tileEntity.getTileData().getDouble("blockHealth");
+				return -1;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z))) > 0)) {
+			{
+				TileEntity tileEntity = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (tileEntity != null)
+					tileEntity.getTileData().setDouble("blockHealth", ((new Object() {
+
+						public double getValue(BlockPos pos) {
+							TileEntity tileEntity = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble("blockHealth");
+							return -1;
+						}
+					}.getValue(new BlockPos((int) x, (int) y, (int) z))) - 1));
+			}
+		} else {
+			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("minerustaddonsmod:broke.metal")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		}
 	}
 }
