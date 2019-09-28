@@ -2,7 +2,7 @@
   "_fv": 3,
   "_type": "food",
   "definition": {
-    "texture": "syringe",
+    "texture": "syringe2",
     "name": "§fMedical Syringe",
     "creativeTab": {
       "value": "CUSTOM:MedicalsTAB"

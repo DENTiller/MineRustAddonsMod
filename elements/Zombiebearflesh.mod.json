@@ -2,7 +2,7 @@
   "_fv": 3,
   "_type": "food",
   "definition": {
-    "texture": "zombiebearflesh",
+    "texture": "spoiledbearflesh",
     "name": "§fZombie  bear flesh",
     "creativeTab": {
       "value": "CUSTOM:FoodsTab"

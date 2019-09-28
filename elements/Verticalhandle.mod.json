@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "verticalhandle",
+    "texture": "verticalhandle2",
     "customModelName": "Normal",
     "name": "§fVertical handle",
     "creativeTab": {

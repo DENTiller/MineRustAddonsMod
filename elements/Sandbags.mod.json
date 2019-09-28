@@ -64,6 +64,12 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
+    "onDestroyedByPlayer": {
+      "name": "BrokeCloth"
+    },
+    "onBlockPlayedBy": {
+      "name": "BuildSandbags"
+    },
     "spawnWorldTypes": [],
     "restricPerBiome": false,
     "restrictionBiomes": [],

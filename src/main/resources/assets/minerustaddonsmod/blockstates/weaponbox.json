@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minerustaddonsmod:weaponbox"
+    },
+    "facing=north": {
+      "model": "minerustaddonsmod:weaponbox"
+    },
+    "facing=east": {
+      "model": "minerustaddonsmod:weaponbox",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minerustaddonsmod:weaponbox",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minerustaddonsmod:weaponbox",
+      "y": 270
+    }
+  }
+}

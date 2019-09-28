@@ -10,7 +10,7 @@
       "value": "CUSTOM:ToolsTab"
     },
     "toolType": "Pickaxe",
-    "harvestLevel": 2,
+    "harvestLevel": 1,
     "efficiency": 0.5,
     "enchantability": 0,
     "damageVsEntity": 0.5,

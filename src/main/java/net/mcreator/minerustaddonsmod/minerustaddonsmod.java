@@ -1,41 +1,169 @@
 package net.mcreator.minerustaddonsmod;
 
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.common.registry.EntityEntry;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.network.IGuiHandler;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.IWorldGenerator;
-import net.minecraftforge.fml.common.IFuelHandler;
-import net.minecraftforge.fluids.FluidRegistry;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-
-import net.minecraft.world.gen.IChunkGenerator;
-import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.World;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.potion.Potion;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.block.Block;
 
 import java.util.function.Supplier;
 import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
+
+import net.minecraft.entity.passive.*;
+import net.minecraft.client.model.*;
+import net.minecraft.entity.boss.*;
+import net.minecraft.creativetab.*;
+import net.minecraft.world.chunk.storage.*;
+
+import net.minecraftforge.fml.common.network.*;
+
+import net.minecraft.server.management.*;
+import net.minecraft.client.particle.*;
+
+import net.minecraftforge.client.model.obj.*;
+import net.minecraftforge.oredict.*;
+
+import net.minecraft.client.settings.*;
+
+import net.minecraftforge.fml.common.eventhandler.*;
+
+import net.minecraft.client.entity.*;
+
+import net.minecraftforge.fml.relauncher.*;
+import net.minecraftforge.fml.server.*;
+
+import net.minecraft.block.state.pattern.*;
+import net.minecraft.network.*;
+import net.minecraft.client.renderer.tileentity.*;
+import net.minecraft.crash.*;
+import net.minecraft.stats.*;
+import net.minecraft.world.gen.structure.template.*;
+import net.minecraft.tileentity.*;
+
+import net.minecraftforge.fml.client.registry.*;
+
+import net.minecraft.world.gen.*;
+
+import net.minecraftforge.fml.common.asm.transformers.*;
+
+import net.minecraft.enchantment.*;
+
+import net.minecraftforge.event.entity.*;
+import net.minecraftforge.fml.common.discovery.*;
+
+import net.minecraft.command.*;
+import net.minecraft.dispenser.*;
+
+import net.minecraftforge.event.entity.item.*;
+
+import net.minecraft.client.gui.*;
+import net.minecraft.server.*;
+import net.minecraft.advancements.critereon.*;
+import net.minecraft.block.*;
+import net.minecraft.entity.*;
+import net.minecraft.client.renderer.entity.*;
+import net.minecraft.entity.ai.*;
+import net.minecraft.inventory.*;
+
+import net.minecraftforge.items.*;
+
+import net.minecraft.world.gen.layer.*;
+
+import net.minecraftforge.event.terraingen.*;
+import net.minecraftforge.event.entity.living.*;
+import net.minecraftforge.fml.common.*;
+
+import net.minecraft.pathfinding.*;
+
+import net.minecraftforge.event.entity.player.*;
+import net.minecraftforge.fml.common.toposort.*;
+
+import net.minecraft.client.util.*;
+
+import net.minecraftforge.client.event.sound.*;
+import net.minecraftforge.client.model.*;
+
+import net.minecraft.server.gui.*;
+
+import net.minecraftforge.client.event.*;
+
+import net.minecraft.util.*;
+
+import net.minecraftforge.fml.common.event.*;
+import net.minecraftforge.event.world.*;
+
+import net.minecraft.client.renderer.block.statemap.*;
+
+import net.minecraftforge.fml.common.discovery.asm.*;
+
+import net.minecraft.item.crafting.*;
+import net.minecraft.entity.effect.*;
+import net.minecraft.client.gui.achievement.*;
+
+import net.minecraftforge.event.entity.minecart.*;
+
+import net.minecraft.client.renderer.culling.*;
+
+import net.minecraftforge.fml.common.versioning.*;
+
+import net.minecraft.entity.projectile.*;
+
+import net.minecraftforge.common.*;
+
+import net.minecraft.util.math.*;
+import net.minecraft.entity.item.*;
+import net.minecraft.item.*;
+
+import net.minecraftforge.fml.client.*;
+import net.minecraftforge.fluids.*;
+
+import net.minecraft.init.*;
+import net.minecraft.advancements.*;
+import net.minecraft.client.audio.*;
+import net.minecraft.world.gen.feature.*;
+
+import net.minecraftforge.fml.common.asm.*;
+
+import net.minecraft.block.state.*;
+import net.minecraft.client.renderer.*;
+import net.minecraft.util.text.*;
+import net.minecraft.entity.player.*;
+
+import net.minecraftforge.fml.common.gameevent.*;
+
+import net.minecraft.world.storage.*;
+import net.minecraft.world.biome.*;
+import net.minecraft.client.*;
+
+import net.minecraftforge.common.util.*;
+
+import net.minecraft.network.rcon.*;
+import net.minecraft.profiler.*;
+
+import net.minecraftforge.classloading.*;
+
+import net.minecraft.village.*;
+import net.minecraft.potion.*;
+import net.minecraft.block.material.*;
+import net.minecraft.world.*;
+import net.minecraft.nbt.*;
+import net.minecraft.world.gen.structure.*;
+import net.minecraft.client.gui.inventory.*;
+import net.minecraft.server.integrated.*;
+import net.minecraft.client.renderer.block.model.*;
+import net.minecraft.block.properties.*;
+import net.minecraft.entity.ai.attributes.*;
+
+import net.minecraftforge.client.*;
+import net.minecraftforge.fml.common.registry.*;
+
+import net.minecraft.world.chunk.*;
+import net.minecraft.client.multiplayer.*;
+import net.minecraft.entity.monster.*;
+
+import net.minecraftforge.event.*;
+
+import net.minecraft.server.dedicated.*;
 
 @Mod(modid = minerustaddonsmod.MODID, version = minerustaddonsmod.VERSION)
 public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
@@ -469,15 +597,9 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		elements.add(new MCreatorNippers(this));
 		elements.add(new MCreatorSilveregg(this));
 		elements.add(new MCreatorSmallrustcase(this));
-		elements.add(new MCreatorSpirit(this));
 		elements.add(new MCreatorStrongrope(this));
-		elements.add(new MCreatorSuperglue(this));
-		elements.add(new MCreatorSyringecraft(this));
 		elements.add(new MCreatorTacticalstockcapture(this));
-		elements.add(new MCreatorTools(this));
 		elements.add(new MCreatorVerticalhandle(this));
-		elements.add(new MCreatorWheels(this));
-		elements.add(new MCreatorWires(this));
 		elements.add(new MCreatorZombiebearflesh(this));
 		elements.add(new MCreatorZombiechickenflesh(this));
 		elements.add(new MCreatorZombiehorseflesh(this));
@@ -504,7 +626,56 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		elements.add(new MCreatorWoodbarricade(this));
 		elements.add(new MCreatorStonebarricade(this));
 		elements.add(new MCreatorSandbags(this));
-		elements.add(new MCreatorWoodwindow(this));
+		elements.add(new MCreatorEasyclothes(this));
+		elements.add(new MCreatorBeans(this));
+		elements.add(new MCreatorBeansinfected(this));
+		elements.add(new MCreatorGeologicalcharge(this));
+		elements.add(new MCreatorSmallstones(this));
+		elements.add(new MCreatorTurquoiseclothesskirt(this));
+		elements.add(new MCreatorBlackclothesskirt(this));
+		elements.add(new MCreatorSpecialforceshelmet(this));
+		elements.add(new MCreatorAntiradFoodEatenUSE(this));
+		elements.add(new MCreatorAntirad(this));
+		elements.add(new MCreatorSupplySignalairdrop(this));
+		elements.add(new MCreatorFuq(this));
+		elements.add(new MCreatorOldcloth(this));
+		elements.add(new MCreatorBeangrenadefragment(this));
+		elements.add(new MCreatorJunk(this));
+		elements.add(new MCreatorQualitydetails(this));
+		elements.add(new MCreatorJunkcan(this));
+		elements.add(new MCreatorGreenkeycard(this));
+		elements.add(new MCreatorRedkeycard(this));
+		elements.add(new MCreatorBluekeycard(this));
+		elements.add(new MCreatorYellowkeycard(this));
+		elements.add(new MCreatorLightgreenkeycard(this));
+		elements.add(new MCreatorCarbattery(this));
+		elements.add(new MCreatorElectricFuse(this));
+		elements.add(new MCreatorOnefullassemblychip(this));
+		elements.add(new MCreatorSuperglue(this));
+		elements.add(new MCreatorWheels(this));
+		elements.add(new MCreatorWires(this));
+		elements.add(new MCreatorWirestool(this));
+		elements.add(new MCreatorSleepingbag(this));
+		elements.add(new MCreatorWeaponbox(this));
+		elements.add(new MCreatorSleepingbagsetspawnpoint(this));
+		elements.add(new MCreatorBuildCloth(this));
+		elements.add(new MCreatorBrokeCloth(this));
+		elements.add(new MCreatorBuildSandbags(this));
+		elements.add(new MCreatorBuildWoodBarricade(this));
+		elements.add(new MCreatorBuildStoneBarricade(this));
+		elements.add(new MCreatorAssemblyblueprints(this));
+		elements.add(new MCreatorClothesskirt(this));
+		elements.add(new MCreatorLeatherarmor(this));
+		elements.add(new MCreatorLeathergloves(this));
+		elements.add(new MCreatorBlackjacketsnow(this));
+		elements.add(new MCreatorShirtclothes(this));
+		elements.add(new MCreatorGreenclothesskirt(this));
+		elements.add(new MCreatorHeavyarmor(this));
+		elements.add(new MCreatorHeavyarmorEffect(this));
+		elements.add(new MCreatorFlashlight(this));
+		elements.add(new MCreatorSpinnerwheel(this));
+		elements.add(new MCreatorPookiebear(this));
+		elements.add(new MCreatorTest(this));
 	}
 
 	@Override
@@ -597,6 +768,24 @@ public class minerustaddonsmod implements IFuelHandler, IWorldGenerator {
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound22).setRegistryName(sound22));
 		ResourceLocation sound23 = new ResourceLocation("minerustaddonsmod", "build.wood2");
 		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound23).setRegistryName(sound23));
+		ResourceLocation sound24 = new ResourceLocation("minerustaddonsmod", "click.interact");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound24).setRegistryName(sound24));
+		ResourceLocation sound25 = new ResourceLocation("minerustaddonsmod", "broke.cloth");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound25).setRegistryName(sound25));
+		ResourceLocation sound26 = new ResourceLocation("minerustaddonsmod", "place.stonebarricade");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound26).setRegistryName(sound26));
+		ResourceLocation sound27 = new ResourceLocation("minerustaddonsmod", "place.woodbarricade");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound27).setRegistryName(sound27));
+		ResourceLocation sound28 = new ResourceLocation("minerustaddonsmod", "place.window");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound28).setRegistryName(sound28));
+		ResourceLocation sound29 = new ResourceLocation("minerustaddonsmod", "place.sleepingbag");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound29).setRegistryName(sound29));
+		ResourceLocation sound30 = new ResourceLocation("minerustaddonsmod", "place.sandbags");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound30).setRegistryName(sound30));
+		ResourceLocation sound31 = new ResourceLocation("minerustaddonsmod", "place.metalwindow2");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound31).setRegistryName(sound31));
+		ResourceLocation sound32 = new ResourceLocation("minerustaddonsmod", "place.metalwindow");
+		event.getRegistry().register(new net.minecraft.util.SoundEvent(sound32).setRegistryName(sound32));
 	}
 
 	@SubscribeEvent

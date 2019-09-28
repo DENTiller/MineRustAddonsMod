@@ -1,0 +1,46 @@
+{
+  "_fv": 3,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "heavyarmorhelmet",
+    "enableBody": true,
+    "textureBody": "heavyarmorchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "heavyarmorleggings",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "HeavyarmorEffect"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ArmorsandClothesTAB"
+    },
+    "armorTextureFile": "heavyarmor_",
+    "helmetName": "§fHeavy helmet",
+    "bodyName": "§fHeavy chestplate",
+    "leggingsName": "§fHeavy leggings",
+    "bootsName": "",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 21,
+    "damageValueHelmet": 7,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 0,
+    "enchantability": 0,
+    "toughness": 2.0
+  }
+}

@@ -2,7 +2,7 @@
   "_fv": 3,
   "_type": "food",
   "definition": {
-    "texture": "zombiewolfflesh",
+    "texture": "zombiewolfflesh2",
     "name": "§fZombie wolf flesh",
     "creativeTab": {
       "value": "CUSTOM:FoodsTab"

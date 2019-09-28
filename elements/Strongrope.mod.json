@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "strongrope",
+    "texture": "strongrope2",
     "customModelName": "Normal",
     "name": "§fStrong rope",
     "creativeTab": {
