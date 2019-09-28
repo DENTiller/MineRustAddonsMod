@@ -2,7 +2,7 @@
   "_fv": 3,
   "_type": "food",
   "definition": {
-    "texture": "zombiechickenflesh",
+    "texture": "spoiledchickenflesh",
     "name": "§fZombie chicken flesh",
     "creativeTab": {
       "value": "CUSTOM:FoodsTab"

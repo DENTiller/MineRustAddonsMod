@@ -2,9 +2,9 @@
   "_fv": 0,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "iconmod",
-    "customModelName": "Normal",
+    "customModelName": "iconmodmodel:default",
     "name": "§f§lIcon Mod",
     "creativeTab": {
       "value": "CUSTOM:OtherTab"

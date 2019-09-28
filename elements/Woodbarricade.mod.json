@@ -23,9 +23,9 @@
     "specialInfo": [],
     "hardness": 55.0,
     "resistance": 10.0,
-    "hasGravity": false,
+    "hasGravity": true,
     "creativeTab": {
-      "value": "CUSTOM:DecorationsTAB"
+      "value": "CUSTOM:BuildingBlock"
     },
     "destroyTool": "axe",
     "affectedBySilkTouch": true,
@@ -66,6 +66,9 @@
     "inventoryOutSlotIDs": [],
     "onDestroyedByPlayer": {
       "name": "WoodBrokenExp"
+    },
+    "onBlockPlayedBy": {
+      "name": "BuildWoodBarricade"
     },
     "spawnWorldTypes": [],
     "restricPerBiome": false,

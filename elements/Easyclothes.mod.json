@@ -1,0 +1,43 @@
+{
+  "_fv": 3,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "easyclothesupper",
+    "enableLeggings": true,
+    "textureLeggings": "easyclotheslower",
+    "enableBoots": false,
+    "textureBoots": "",
+    "creativeTab": {
+      "value": "CUSTOM:ArmorsandClothesTAB"
+    },
+    "armorTextureFile": "easyclothes_____",
+    "helmetName": "",
+    "bodyName": "§fEasy clothes upper",
+    "leggingsName": "Easy clothes lower",
+    "bootsName": "",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 2,
+    "damageValueHelmet": 0,
+    "damageValueBody": 1,
+    "damageValueLeggings": 1,
+    "damageValueBoots": 0,
+    "enchantability": 0,
+    "toughness": 0.0
+  }
+}

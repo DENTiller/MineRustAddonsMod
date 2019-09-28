@@ -23,9 +23,9 @@
     "specialInfo": [],
     "hardness": 25.0,
     "resistance": 10.0,
-    "hasGravity": false,
+    "hasGravity": true,
     "creativeTab": {
-      "value": "CUSTOM:DecorationsTAB"
+      "value": "CUSTOM:BuildingBlock"
     },
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
@@ -66,6 +66,9 @@
     "inventoryOutSlotIDs": [],
     "onDestroyedByPlayer": {
       "name": "StoneBrokenExp"
+    },
+    "onBlockPlayedBy": {
+      "name": "BuildStoneBarricade"
     },
     "spawnWorldTypes": [],
     "restricPerBiome": false,

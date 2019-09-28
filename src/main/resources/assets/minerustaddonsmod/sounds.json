@@ -214,5 +214,86 @@
         "stream": false
       }
     ]
+  },
+  "click.interact": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:click",
+        "stream": false
+      }
+    ]
+  },
+  "broke.cloth": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:brokecloth",
+        "stream": false
+      }
+    ]
+  },
+  "place.stonebarricade": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:placestonebarricade",
+        "stream": false
+      }
+    ]
+  },
+  "place.woodbarricade": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:placewoodbarricade",
+        "stream": false
+      }
+    ]
+  },
+  "place.window": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:placewindow",
+        "stream": false
+      }
+    ]
+  },
+  "place.sleepingbag": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:placesleepingbag",
+        "stream": false
+      }
+    ]
+  },
+  "place.sandbags": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:placesandbags",
+        "stream": false
+      }
+    ]
+  },
+  "place.metalwindow2": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:placemetalwindow2",
+        "stream": false
+      }
+    ]
+  },
+  "place.metalwindow": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "minerustaddonsmod:placemetalwindow",
+        "stream": false
+      }
+    ]
   }
 }

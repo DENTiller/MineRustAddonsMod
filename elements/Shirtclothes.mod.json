@@ -1,0 +1,43 @@
+{
+  "_fv": 3,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "farmerhat",
+    "enableBody": true,
+    "textureBody": "whiteshirt",
+    "enableLeggings": false,
+    "textureLeggings": "clothesboots",
+    "enableBoots": true,
+    "textureBoots": "clothboots",
+    "creativeTab": {
+      "value": "CUSTOM:ArmorsandClothesTAB"
+    },
+    "armorTextureFile": "shirtclothes_",
+    "helmetName": "§fFarmer hat",
+    "bodyName": "?§fWhite shirt",
+    "leggingsName": "",
+    "bootsName": "§fClothes boots",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 3,
+    "damageValueHelmet": 1,
+    "damageValueBody": 1,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 1,
+    "enchantability": 0,
+    "toughness": 0.0
+  }
+}

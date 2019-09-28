@@ -2,7 +2,7 @@
   "_fv": 3,
   "_type": "food",
   "definition": {
-    "texture": "zombiehorseflesh",
+    "texture": "spoiledhorseflesh",
     "name": "§fZombie horse flesh",
     "creativeTab": {
       "value": "CUSTOM:FoodsTab"

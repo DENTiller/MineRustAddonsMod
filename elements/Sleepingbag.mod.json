@@ -1,0 +1,89 @@
+{
+  "_fv": 3,
+  "_type": "block",
+  "definition": {
+    "texture": "bag",
+    "textureTop": "bag",
+    "textureLeft": "bag",
+    "textureFront": "bag",
+    "textureRight": "bag",
+    "textureBack": "bag",
+    "renderType": 2,
+    "customModelName": "sleepingbag:default",
+    "rotationMode": 1,
+    "hasTransparency": true,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 0.30000000000000004,
+    "Mz": 1.0,
+    "name": "§fSleeping bag",
+    "specialInfo": [],
+    "hardness": 60.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "creativeTab": {
+      "value": "CUSTOM:BuildingBlock"
+    },
+    "destroyTool": "axe",
+    "affectedBySilkTouch": true,
+    "hasCustomDrop": true,
+    "customDrop": {
+      "value": "CUSTOM:CLoth"
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "CLOTH"
+    },
+    "tickRate": 10,
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "CLOTH"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "onRightClicked": {
+      "name": "Sleepingbagsetspawnpoint"
+    },
+    "onDestroyedByPlayer": {
+      "name": "BrokeCloth"
+    },
+    "onBlockPlayedBy": {
+      "name": "BuildCloth"
+    },
+    "spawnWorldTypes": [],
+    "restricPerBiome": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 10,
+    "maxGenerateHeight": 110
+  }
+}

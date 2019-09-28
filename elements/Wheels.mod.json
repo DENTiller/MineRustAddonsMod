@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "wheels",
+    "texture": "wheel",
     "customModelName": "Normal",
-    "name": "§fWheels",
+    "name": "§fWheel",
     "creativeTab": {
       "value": "CUSTOM:ResourcesTab"
     },

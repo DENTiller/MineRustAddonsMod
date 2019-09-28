@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "goldkey",
     "customModelName": "Normal",
-    "name": "§a§l? Ключ к золотому кейсу",
+    "name": "§a§lКлюч к золотому кейсу",
     "creativeTab": {
       "value": "CUSTOM:ProjectTAB"
     },

@@ -24,7 +24,7 @@
       "§fLevel Protection : §a[3] §a",
       "- It breaks hard"
     ],
-    "hardness": 50.0,
+    "hardness": 4200.0,
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
@@ -61,11 +61,11 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
-    "hasInventory": true,
-    "inventorySize": 0,
+    "hasInventory": false,
+    "inventorySize": 9,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": false,
-    "inventoryComparatorPower": false,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "onRightClicked": {
       "name": "Metalwalluparmored"

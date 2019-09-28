@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "smgbody",
+    "texture": "smgbody3",
     "customModelName": "Normal",
     "name": "§fSMG - Body",
     "creativeTab": {
