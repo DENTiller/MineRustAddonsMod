@@ -1,0 +1,15 @@
+if (world.getTileEntity(pos).getTileData().getDouble("blockHealth")<=0
+					|| entity.capabilities.isCreativeMode
+					|| (world.getTileEntity(pos).getTileData().getString("ownerUUID").equals(entity.getPersistentID().toString())))
+				return super.removedByPlayer(state, world, pos, entity, willHarvest);
+			else
+				return false;
+
+
+
+
+
+tileEntity.getTileData().setDouble("blockHealth", 10);
+				tileEntity.getTileData().setString("ownerUUID", entity.getPersistentID().toString());
+				tileEntity.getTileData().setString("ownerName", entity.getName());
+				

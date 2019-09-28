@@ -73,9 +73,9 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 			setRegistryName("metalwall");
 			setUnlocalizedName("metalwall");
 			setSoundType(SoundType.METAL);
-			setHarvestLevel("pickaxe", 3);
-			setHardness(10F);
-			setResistance(10F);
+			setHarvestLevel("pickaxe", 2);
+			setHardness(15F);
+			setResistance(200F);
 			setLightLevel(0F);
 			setLightOpacity(255);
 			setCreativeTab(MCreatorBuildingBlock.tab);
@@ -147,7 +147,10 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 				$_dependencies.put("world", world);
 				MCreatorBrokeMetal.executeProcedure($_dependencies);
 			}
-			if (world.getTileEntity(pos).getTileData().getDouble("blockHealth")<=0 || entity.capabilities.isCreativeMode)
+			
+			if (world.getTileEntity(pos).getTileData().getDouble("blockHealth")<=0
+					|| entity.capabilities.isCreativeMode
+					|| (world.getTileEntity(pos).getTileData().getString("ownerUUID").equals(entity.getPersistentID().toString())))
 				return super.removedByPlayer(state, world, pos, entity, willHarvest);
 			else
 				return false;
@@ -179,6 +182,7 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 			Block block = this;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -204,7 +208,7 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 				$_dependencies.put("world", world);
 				MCreatorMetalwalluparmored.executeProcedure($_dependencies);
 			}
-			return true;
+			return false;
 		}
 	}
 
