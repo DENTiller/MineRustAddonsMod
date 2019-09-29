@@ -1,32 +1,34 @@
 package net.mcreator.minerustaddonsmod;
 
-import java.util.List;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.Explosion;
-import net.minecraft.world.World;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.world.Explosion;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.Item;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.BlockHorizontal;
+import net.minecraft.block.Block;
+
+import java.util.List;
+import java.util.HashMap;
 
 public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 
@@ -55,9 +57,9 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 			setRegistryName("metalwall");
 			setUnlocalizedName("metalwall");
 			setSoundType(SoundType.METAL);
-			setHarvestLevel("pickaxe", 2);
-			setHardness(15F);
-			setResistance(200F);
+			setHarvestLevel("pickaxe", 7);
+			setHardness(4200F);
+			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
 			setCreativeTab(MCreatorBuildingBlock.tab);
@@ -100,6 +102,7 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 
 		@Override
 		public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer entity, boolean willHarvest) {
+			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -112,13 +115,7 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 				$_dependencies.put("world", world);
 				MCreatorBrokeMetal.executeProcedure($_dependencies);
 			}
-			
-			if (world.getTileEntity(pos).getTileData().getDouble("blockHealth")<=0
-					|| entity.capabilities.isCreativeMode
-					|| (world.getTileEntity(pos).getTileData().getString("ownerUUID").equals(entity.getPersistentID().toString())))
-				return super.removedByPlayer(state, world, pos, entity, willHarvest);
-			else
-				return false;
+			return retval;
 		}
 
 		@Override
@@ -147,7 +144,6 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 			Block block = this;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -173,7 +169,7 @@ public class MCreatorMetalwall extends minerustaddonsmod.ModElement {
 				$_dependencies.put("world", world);
 				MCreatorMetalwalluparmored.executeProcedure($_dependencies);
 			}
-			return false;
+			return true;
 		}
 	}
 }
